@@ -1,0 +1,14 @@
+<div class="wrap">
+  <button class="button" (click)="sortCountriesByName()">
+    Ordem Alfabetica
+  </button>
+</div>
+<div class="cards">
+  <div class="card" *ngFor="let lengs of leng">
+    <h2 class="card-title">{{ lengs.title }}</h2>
+    <img src="{{ lengs.image }}" alt="" />
+    <p class="card-desc">
+      {{ lengs.description }}
+    </p>
+  </div>
+</div>
