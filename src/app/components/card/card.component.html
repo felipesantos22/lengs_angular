@@ -1,7 +1,8 @@
 <div class="wrap">
-  <button class="button" (click)="sortCountriesByName()">
-    Ordem Alfabetica
-  </button>
+  <button class="button" (click)="resetFilters()">Todas</button>
+  <button class="button" (click)="sortLeng()">Ordem Alfabetica</button>
+  <button class="button" (click)="filterOO()">Orientadas a objetos</button>
+  <button class="button" (click)="filterFrameworks()">Frameworks</button>
 </div>
 <div class="cards">
   <div class="card" *ngFor="let lengs of leng">
